@@ -124,11 +124,17 @@ public class SponsorController : ControllerBase
         _context.TournamentSponsors.Add(relation);
         _context.SaveChanges();
 
-        return StatusCode(201, relation);
+        return Ok(new
+        {
+            relation.SponsorId,
+            relation.TournamentId,
+            relation.ContractAmount
+        });
     }
+    
 
-    // 🔥 DELETE desvincular
-    [HttpDelete("{id}/tournaments/{tid}")]
+        // 🔥 DELETE desvincular
+        [HttpDelete("{id}/tournaments/{tid}")]
     public IActionResult RemoveTournament(int id, int tid)
     {
         var relation = _context.TournamentSponsors
