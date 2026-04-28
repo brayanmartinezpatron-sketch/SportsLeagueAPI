@@ -7,4 +7,7 @@ public class TeamCreateDto
     public string Stadium { get; set; } = string.Empty;
     public string? LogoUrl { get; set; }
     public DateTime FoundedDate { get; set; }
+    public string CoachName { get; set; } = string.Empty;
+    public string HomeCity { get; set; } = string.Empty;
+    public int TitlesCount { get; set; }
 }

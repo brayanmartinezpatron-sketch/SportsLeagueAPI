@@ -3,6 +3,7 @@ using SportsLeague.DataAccess.Context;
 using SportsLeague.Domain.Entities;
 using SportsLeague.API.DTOs;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
 
 namespace SportsLeague.API.Controllers;
 
@@ -43,7 +44,9 @@ public class TournamentController : ControllerBase
         {
             Name = dto.Name,
             Location = dto.Location,
-            StartDate = dto.StartDate
+            StartDate = dto.StartDate,
+            Prize = dto.Prize,
+            Status = dto.Status
         };
 
         _context.Tournaments.Add(tournament);
@@ -63,6 +66,8 @@ public class TournamentController : ControllerBase
         existing.Name = dto.Name;
         existing.Location = dto.Location;
         existing.StartDate = dto.StartDate;
+        existing.Prize = dto.Prize;
+        existing.Status = dto.Status;
 
         _context.SaveChanges();
 
@@ -114,15 +119,14 @@ public class TournamentController : ControllerBase
         return Ok(tournament);
     }
     [HttpGet("{id}/teams")]
-    public IActionResult GetTeams(int id)
+    public IActionResult GetTournamentTeams(int id)
     {
-        var tournament = _context.Tournaments
-            .Include(t => t.Teams)
-            .FirstOrDefault(t => t.Id == id);
+        var teams = _context.TournamentTeams
+            .Include(tt => tt.Team)
+            .Where(tt => tt.TournamentId == id)
+            .Select(tt => tt.Team)
+            .ToList();
 
-        if (tournament == null)
-            return NotFound();
-
-        return Ok(tournament.Teams);
+        return Ok(teams);
     }
 }

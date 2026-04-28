@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using SportsLeague.DataAccess.Context;
 using SportsLeague.Domain.Entities;
 using SportsLeague.API.DTOs;
+using Microsoft.EntityFrameworkCore;
 
 namespace SportsLeague.API.Controllers;
 
@@ -45,7 +46,11 @@ public class TeamController : ControllerBase
             City = dto.City,
             Stadium = dto.Stadium,
             LogoUrl = dto.LogoUrl,
-            FoundedDate = dto.FoundedDate
+            FoundedDate = dto.FoundedDate,
+
+            CoachName = dto.CoachName,
+            HomeCity = dto.HomeCity,
+            TitlesCount = dto.TitlesCount
         };
 
         _context.Teams.Add(team);
@@ -67,6 +72,9 @@ public class TeamController : ControllerBase
         existing.Stadium = team.Stadium;
         existing.LogoUrl = team.LogoUrl;
         existing.FoundedDate = team.FoundedDate;
+        existing.CoachName = team.CoachName;
+        existing.HomeCity = team.HomeCity;
+        existing.TitlesCount = team.TitlesCount;
 
         _context.SaveChanges();
 
@@ -85,5 +93,18 @@ public class TeamController : ControllerBase
         _context.SaveChanges();
 
         return Ok();
+    }
+   
+    [HttpGet("{id}/players")]
+    public IActionResult GetTeamWithPlayers(int id)
+    {
+        var team = _context.Teams
+            .Include(t => t.Players)
+            .FirstOrDefault(t => t.Id == id);
+
+        if (team == null)
+            return NotFound();
+
+        return Ok(team.Players);
     }
 }

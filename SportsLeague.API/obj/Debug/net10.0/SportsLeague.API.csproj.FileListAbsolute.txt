@@ -150,6 +150,7 @@ C:\Users\braya\OneDrive\Desktop\SportsLeague\SportsLeague.API\obj\Debug\net10.0\
 C:\Users\braya\OneDrive\Desktop\SportsLeague\SportsLeague.API\obj\Debug\net10.0\SportsLeague.API.csproj.CoreCompileInputs.cache
 C:\Users\braya\OneDrive\Desktop\SportsLeague\SportsLeague.API\obj\Debug\net10.0\SportsLeague.API.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\braya\OneDrive\Desktop\SportsLeague\SportsLeague.API\obj\Debug\net10.0\SportsLeague.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\braya\OneDrive\Desktop\SportsLeague\SportsLeague.API\obj\Debug\net10.0\SportsLeague.API.sourcelink.json
 C:\Users\braya\OneDrive\Desktop\SportsLeague\SportsLeague.API\obj\Debug\net10.0\rjimswa.dswa.cache.json
 C:\Users\braya\OneDrive\Desktop\SportsLeague\SportsLeague.API\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
 C:\Users\braya\OneDrive\Desktop\SportsLeague\SportsLeague.API\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
@@ -165,4 +166,3 @@ C:\Users\braya\OneDrive\Desktop\SportsLeague\SportsLeague.API\obj\Debug\net10.0\
 C:\Users\braya\OneDrive\Desktop\SportsLeague\SportsLeague.API\obj\Debug\net10.0\SportsLeague.API.pdb
 C:\Users\braya\OneDrive\Desktop\SportsLeague\SportsLeague.API\obj\Debug\net10.0\SportsLeague.API.genruntimeconfig.cache
 C:\Users\braya\OneDrive\Desktop\SportsLeague\SportsLeague.API\obj\Debug\net10.0\ref\SportsLeague.API.dll
-C:\Users\braya\OneDrive\Desktop\SportsLeague\SportsLeague.API\obj\Debug\net10.0\SportsLeague.API.sourcelink.json

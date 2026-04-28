@@ -6,6 +6,8 @@ public class Tournament : AuditBase
     public string Location { get; set; } = string.Empty;
     public DateTime StartDate { get; set; }
 
+    public decimal Prize { get; set; }
+
     public string Status { get; set; } = "Pending";
 
     public List<Team> Teams { get; set; } = new();

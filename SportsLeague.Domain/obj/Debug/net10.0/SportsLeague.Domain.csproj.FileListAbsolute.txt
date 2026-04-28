@@ -6,6 +6,7 @@ C:\Users\braya\OneDrive\Desktop\SportsLeague\SportsLeague.Domain\obj\Debug\net10
 C:\Users\braya\OneDrive\Desktop\SportsLeague\SportsLeague.Domain\obj\Debug\net10.0\SportsLeague.Domain.AssemblyInfoInputs.cache
 C:\Users\braya\OneDrive\Desktop\SportsLeague\SportsLeague.Domain\obj\Debug\net10.0\SportsLeague.Domain.AssemblyInfo.cs
 C:\Users\braya\OneDrive\Desktop\SportsLeague\SportsLeague.Domain\obj\Debug\net10.0\SportsLeague.Domain.csproj.CoreCompileInputs.cache
+C:\Users\braya\OneDrive\Desktop\SportsLeague\SportsLeague.Domain\obj\Debug\net10.0\SportsLeague.Domain.sourcelink.json
 C:\Users\braya\OneDrive\Desktop\SportsLeague\SportsLeague.Domain\obj\Debug\net10.0\SportsLeague.Domain.dll
 C:\Users\braya\OneDrive\Desktop\SportsLeague\SportsLeague.Domain\obj\Debug\net10.0\refint\SportsLeague.Domain.dll
 C:\Users\braya\OneDrive\Desktop\SportsLeague\SportsLeague.Domain\obj\Debug\net10.0\SportsLeague.Domain.pdb

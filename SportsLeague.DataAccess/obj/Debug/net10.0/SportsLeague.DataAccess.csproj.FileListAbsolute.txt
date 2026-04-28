@@ -9,6 +9,7 @@ C:\Users\braya\OneDrive\Desktop\SportsLeague\SportsLeague.DataAccess\obj\Debug\n
 C:\Users\braya\OneDrive\Desktop\SportsLeague\SportsLeague.DataAccess\obj\Debug\net10.0\SportsLeague.DataAccess.AssemblyInfoInputs.cache
 C:\Users\braya\OneDrive\Desktop\SportsLeague\SportsLeague.DataAccess\obj\Debug\net10.0\SportsLeague.DataAccess.AssemblyInfo.cs
 C:\Users\braya\OneDrive\Desktop\SportsLeague\SportsLeague.DataAccess\obj\Debug\net10.0\SportsLeague.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\braya\OneDrive\Desktop\SportsLeague\SportsLeague.DataAccess\obj\Debug\net10.0\SportsLeague.DataAccess.sourcelink.json
 C:\Users\braya\OneDrive\Desktop\SportsLeague\SportsLeague.DataAccess\obj\Debug\net10.0\SportsLe.95752F64.Up2Date
 C:\Users\braya\OneDrive\Desktop\SportsLeague\SportsLeague.DataAccess\obj\Debug\net10.0\SportsLeague.DataAccess.dll
 C:\Users\braya\OneDrive\Desktop\SportsLeague\SportsLeague.DataAccess\obj\Debug\net10.0\refint\SportsLeague.DataAccess.dll
