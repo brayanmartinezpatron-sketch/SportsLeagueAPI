@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\SportsLeague.API",
+    "\\SportsLeague.DataAccess",
+    "\\SportsLeague.DataAccess\\Seeders"
+  ],
+  "SelectedNode": "\\SportsLeague.DataAccess\\Seeders\\DataSeeder.cs",
+  "PreviewInSolutionExplorer": false
+}
