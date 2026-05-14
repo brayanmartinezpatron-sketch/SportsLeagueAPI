@@ -1,6 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using SportsLeague.DataAccess.Context;
 using SportsLeague.DataAccess.Seeders;
+using SportsLeague.API.Interfaces;
+using SportsLeague.API.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +10,7 @@ builder.Services.AddDbContext<LeagueDbContext>(options =>
     options.UseSqlServer("Server=localhost;Database=SportsLeagueDb;Trusted_Connection=true;TrustServerCertificate=true;"));
 
 builder.Services.AddControllers();
+builder.Services.AddScoped<IStandingsService, StandingsService>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
