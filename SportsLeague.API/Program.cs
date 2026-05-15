@@ -13,6 +13,7 @@ builder.Services.AddControllers();
 builder.Services.AddScoped<IStandingsService, StandingsService>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddScoped<MatchLineupService>();
 
 var app = builder.Build();
 

@@ -16,6 +16,7 @@ public class LeagueDbContext : DbContext
     public DbSet<Sponsor> Sponsors => Set<Sponsor>();
     public DbSet<TournamentSponsor> TournamentSponsors => Set<TournamentSponsor>();
     public DbSet<TournamentTeam> TournamentTeams => Set<TournamentTeam>();
+    public DbSet<MatchLineup> MatchLineups => Set<MatchLineup>();
 
     public DbSet<Match> Matches => Set<Match>();
     public DbSet<MatchResult> MatchResults => Set<MatchResult>();
@@ -51,5 +52,9 @@ public class LeagueDbContext : DbContext
             .WithMany()
             .HasForeignKey(m => m.AwayTeamId)
             .OnDelete(DeleteBehavior.NoAction);
+
+        modelBuilder.Entity<MatchLineup>()
+    .HasIndex(ml => new { ml.MatchId, ml.PlayerId })
+    .IsUnique();
     }
 }

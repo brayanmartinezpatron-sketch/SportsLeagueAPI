@@ -2,9 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\SportsLeague.API",
-    "\\SportsLeague.API\\DTOs\\Response",
-    "\\SportsLeague.DataAccess\\Seeders"
+    "\\SportsLeague.API\\Services",
+    "\\SportsLeague.DataAccess\\Seeders",
+    "\\SportsLeague.Domain\\Entities"
   ],
-  "SelectedNode": "\\SportsLeague.API\\Program.cs",
+  "SelectedNode": "\\SportsLeague.API\\Services\\MatchLineupService.cs",
   "PreviewInSolutionExplorer": false
 }
